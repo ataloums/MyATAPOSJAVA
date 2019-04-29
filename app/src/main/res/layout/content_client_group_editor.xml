@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_5"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+
+ <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="@dimen/spacing_mlarge"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:maxWidth="@dimen/max_default_size"
+            android:minWidth="@dimen/min_default_size"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_medium" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_middle"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:textAllCaps="false"
+                android:text="Please fill in the information below. The field labels marked with * are required input fields."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/grey_40" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_large" />
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:hint="Group Name *"
+                android:minHeight="45dp"
+                android:focusable="true"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:id="@+id/value"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_text_round_bg_white"
+                    android:hint="Group Percentage (without % sign) *"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle" />
+
+            </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="@string/delete"
+            android:theme="@style/Button.White.Primary" />
+
+    </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
