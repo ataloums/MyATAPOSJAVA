@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import androidx.fragment.app.Fragment;
 import info.atalou.apps.myatapos.R;
 import info.atalou.apps.myatapos.ui.activity.AboutActivity;
+import info.atalou.apps.myatapos.ui.activity.LoginActivity;
 import info.atalou.apps.myatapos.ui.activity.more.CompanyDetailsActivity;
 import info.atalou.apps.myatapos.ui.activity.more.TaxListActivity;
 
@@ -74,6 +75,6 @@ public class MoreFragment extends Fragment {
     }
 
     private void launchSupport() {
-        startActivity(new Intent(getActivity(), AboutActivity.class));
+        startActivity(new Intent(getActivity(), LoginActivity.class));
     }
 }

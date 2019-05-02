@@ -9,32 +9,53 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".ui.activity.LoginActivity"></activity>
         <activity
             android:name=".ui.activity.MainActivity"
-            android:screenOrientation="landscape"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".ui.activity.people.ClientListActivity" android:screenOrientation="landscape"/>
-        <activity android:name=".ui.activity.people.ClientEditorActivity" android:screenOrientation="landscape"/>
-        <activity android:name=".ui.activity.catalog.CategoryEditorActivity" android:screenOrientation="landscape"/>
-        <activity android:name=".ui.activity.catalog.CategoryListActivity" android:screenOrientation="landscape"/>
-        <activity android:name=".ui.activity.more.CompanyDetailsActivity" android:screenOrientation="landscape"/>
-        <activity android:name=".ui.activity.AboutActivity" android:screenOrientation="landscape"/>
-        <activity android:name=".ui.activity.more.TaxListActivity" android:screenOrientation="landscape"/>
-        <activity android:name=".ui.activity.more.TaxEditorActivity" android:screenOrientation="landscape"/>
-        <activity android:name=".ui.activity.people.CustomerGroupListActivity" android:screenOrientation="landscape"/>
-        <activity android:name=".ui.activity.people.CustomerGroupEditorActivity" android:screenOrientation="landscape"/>
-        <activity android:name=".ui.activity.people.UserListActivity" android:screenOrientation="landscape"/>
-        <activity android:name=".ui.activity.people.UserEditorActivity" android:screenOrientation="landscape"/>
-
-
+        <activity
+            android:name=".ui.activity.people.ClientListActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.people.ClientEditorActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.catalog.CategoryEditorActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.catalog.CategoryListActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.more.CompanyDetailsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.AboutActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.more.TaxListActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.more.TaxEditorActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.people.CustomerGroupListActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.people.CustomerGroupEditorActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.people.UserListActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.people.UserEditorActivity"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>
